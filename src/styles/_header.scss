@@ -1,0 +1,38 @@
+@use 'variaveis';
+
+.header {
+    padding: 0 5.6vw;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    background-color: variaveis.$corPrimary;
+
+    h1 {
+        margin: 0;
+    }
+
+    &__logo {
+        max-width: 180px;
+        width: 100%;
+    }  
+    
+    &__list {
+        list-style: none;
+
+        &__item {
+            display: inline-block;
+            padding-top: 40px;
+            padding-left: 12px;
+
+            .item__link {
+                text-decoration: none;
+                color: variaveis.$corSecundary;
+                font-weight: bold;
+
+                &:hover {
+                    border-bottom: 3px solid variaveis.$corSecundary;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,44 @@
+@use 'header';
+@use 'variaveis';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@mixin text($fontSize: 16px) {
+    font-size: $fontSize;
+    color: variaveis.$corPrimary;
+    font-family: variaveis.$FontText;
+}
+
+@mixin title($fontSize: 40px) {
+    font-size: $fontSize;
+    color: variaveis.$corPrimary;
+    font-family: variaveis.$FontTitle;
+}
+
+.text--big {
+    @include text(18px)
+}
+
+.text {
+    @include text
+}
+
+.text--small {
+    @include text(12px)
+}
+
+.title--big {
+    @include title(44px)
+}
+
+.title {
+    @include title
+}
+
+.title--small {
+    @include title(20px)
+}
