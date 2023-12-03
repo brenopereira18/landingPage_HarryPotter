@@ -1,0 +1,31 @@
+@use 'variaveis';
+
+.home {
+    background-color: variaveis.$corDeFundo;  
+    
+    
+    &__content {           
+      padding: 5.6vw;               
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+
+      &__title {
+        max-width: 450px;
+        width: 100%;
+        
+        p {
+          padding-top: 16px;
+        }                    
+      }        
+            
+      img {          
+        animation: sway 3s ease-in-out infinite;
+        border-radius: 3px;
+        max-width: 500px;
+        width: 100%;               
+        
+      }
+
+    }        
+}
