@@ -3,6 +3,10 @@
 .attractions {
     padding: 5.6vw;
     background-color: variaveis.$corPrimary;
+
+    @media (max-width: 768px) {
+        padding: 12vw 5.6vw;
+    }
     
     h2 {
         color: variaveis.$corDeFundo;
@@ -12,10 +16,18 @@
 
     &__content {
         display: grid;
-        grid-template-columns: 1fr 5fr
+        grid-template-columns: 1fr 5fr;
+
+        @media (max-width: 768px) {
+            display: block;
+        }
     }
     
     &__links {
+        @media (max-width: 768px) {
+            text-align: center;
+            padding-bottom: 16px;
+        }
         
         &__link {
             color: variaveis.$corDeFundo;
@@ -25,6 +37,11 @@
             cursor: pointer;           
             font-weight: bold;
             border-bottom: 3px solid transparent;
+
+            @media (max-width: 768px) {
+                display: inline-block;
+                margin: 16px;                
+            }
             
             &--is-active {
                 border: none;
@@ -40,18 +57,31 @@
         &--is-active {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr;
+
+            @media (max-width: 768px) {
+                grid-template-columns: 1fr 1fr;
+            }
             
         }
 
         &__item {
             list-style: none;            
             padding-bottom: 24px;
+
+            @media (max-width: 768px) {
+                text-align: center;
+            }
             
             img {
                 max-width: 180px;
                 width: 100%;
                 border-radius: 6px;            
                 cursor: pointer;
+
+                @media (max-width: 768px) {
+                    max-width: 140px;
+                    width: 100%;
+                }
 
             }
         }

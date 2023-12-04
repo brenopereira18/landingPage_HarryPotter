@@ -11,33 +11,38 @@
 </head>
 <body>
     <header class="header">
-        <h1>
-            <img class="header__logo" src="./dist/images/Logo.png" alt="Harry Potter">
-        </h1>
+        <div class="content_menu-hamburguer">
+            <h1>
+                <img class="header__logo" src="./dist/images/Logo.png" alt="Harry Potter">
+            </h1>
+            <div class="container">
+                <img class="menu-hamburguer" src="./src/images/barra-de-menu.png" alt="menu-hamburguer">    
+            </div>
+        </div>
         <ul class="header__list">
             <li class="header__list__item">
-                <a href="" class="item__link text--big">
+                <a href="#home" class="item__link text--big">
                     Home
                 </a>
             </li>
             <li class="header__list__item">
-                <a href="" class="item__link text--big">
+                <a href="#attractions" class="item__link text--big">
                     Filmes e livros
                 </a>
             </li>
             <li class="header__list__item">
-                <a href="" class="item__link text--big">
+                <a href="#characters" class="item__link text--big">
                     Personagens
                 </a>
             </li>
             <li class="header__list__item">
-                <a href="" class="item__link text--big">
+                <a href="#products" class="item__link text--big">
                     Produtos
                 </a>
             </li>            
         </ul>
     </header>
-    <section class="home">
+    <section class="home" id="home">
         <div class="home__content">
             <div class="home__content__title">
                 <h2 class="title--big">A incrível saga de <span>Harry Potter</span></h2>
@@ -48,7 +53,7 @@
             <img src="./dist/images/home-image.jpg" alt="Harry Potter, Herminone Granger e Ron Weasley">                            
         </div>
     </section>
-    <section class="attractions">
+    <section class="attractions" id="attractions">
         <h2 class="title--big">Filmes e livros</h2>
         <div class="attractions__content">
             <nav class="attractions__links">
@@ -112,7 +117,7 @@
             </div>
         </div>
     </section>
-    <section class="characters">
+    <section class="characters" id="characters" >
         <h2 class="title--big">Personagens principais</h2>
         <div class="characters__content">
             <div class="characters__content__character">
@@ -138,7 +143,7 @@
             </div>
         </div>    
     </section>
-    <section class="products">
+    <section class="products" id="products">
         <h2 class="title--big">Produtos</h2>
         <div class="products__content">
             <div class="products__content__product">

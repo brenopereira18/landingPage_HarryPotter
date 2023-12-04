@@ -5,6 +5,10 @@
     background-color: variaveis.$corDeFundo;
     color: variaveis.$corTitleProminence;
 
+    @media (max-width: 768px) {
+        padding: 12vw 5.6vw;
+    }
+
     h2 {
         text-align: center;
         padding-bottom: 60px;
@@ -13,11 +17,19 @@
     &__content {        
         text-align: center;
         display: flex; 
-        justify-content: space-between;      
+        justify-content: space-between;
+        
+        @media (max-width: 768px) {
+            flex-direction: column;
+        }
         
         &__character {            
             max-width: 350px;
-            width: 100%;         
+            width: 100%; 
+            
+            @media (max-width: 768px) {
+                margin-bottom: 60px;
+            }
                         
             
             img {

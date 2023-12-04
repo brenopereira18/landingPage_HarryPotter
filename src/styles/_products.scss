@@ -3,6 +3,9 @@
 .products {
     padding: 5.6vw;
     background-color: variaveis.$corPrimary;
+    @media (max-width: 768px) {
+        padding: 12vw 5.6vw;
+    }
 
     h2 {
         text-align: center;
@@ -14,6 +17,11 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 60px;
+
+        @media (max-width:768px) {
+            display: flex;
+            flex-direction: column;
+        }
 
         &__product {            
             text-align: center;

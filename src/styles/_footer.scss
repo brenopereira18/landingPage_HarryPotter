@@ -4,10 +4,15 @@
     padding: 2vw 5.6vw;
     background-color: variaveis.$corDeFundo;
     color: variaveis.$corTitleProminence;
+    
+    @media (max-width: 768px) {
+        padding: 8vw 5.6vw;
+    }
 
     h6 {
         text-align: center;
         padding-bottom: 8px;
+
     }
 
     &__social-networks {

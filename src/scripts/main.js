@@ -1,6 +1,19 @@
 document.addEventListener('DOMContentLoaded', function() {
     const buttons = document.querySelectorAll('[data-tab-button]')
 
+    const menuHamburguer = document.querySelector('.menu-hamburguer')    
+
+    // Header
+    menuHamburguer.addEventListener('click', () => {
+        const navHeader = document.querySelector('.header__list')
+        
+        if (navHeader.style.display === "block") {
+            navHeader.style.display = "none"
+        } else {
+            navHeader.style.display = "block"            
+        }
+    })
+
     // section ATTRACTIONS
     buttons.forEach((botao) => {
         botao.addEventListener('click', mudaAba)
