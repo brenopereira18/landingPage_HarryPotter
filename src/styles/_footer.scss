@@ -1,0 +1,29 @@
+@use 'variaveis';
+
+.footer {
+    padding: 2vw 5.6vw;
+    background-color: variaveis.$corDeFundo;
+    color: variaveis.$corTitleProminence;
+
+    h6 {
+        text-align: center;
+        padding-bottom: 8px;
+    }
+
+    &__social-networks {
+        display: flex;
+        justify-content: center;
+        gap: 12px;
+        padding-bottom: 20px;
+        img {
+            max-width: 30px;
+            width: 100%;
+            
+        }
+    }
+
+    p {
+        
+        text-align: center;
+    }
+}
