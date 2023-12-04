@@ -3,6 +3,7 @@
 @use 'home';
 @use 'attractions';
 @use 'characters';
+@use 'products';
 
 * {
     margin: 0;
@@ -44,3 +45,22 @@
     @include title(20px);
 }
 
+.button {
+    width: 200px;
+    padding: 8px;
+    color: variaveis.$corTitleProminence;
+    background-color: variaveis.$corDeFundo;
+    border: 1px solid variaveis.$corDeFundo;    
+    border-radius: 6px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+
+    &:hover {        
+    color: variaveis.$corDeFundo;
+    background-color: variaveis.$corTitleProminence;
+    border: 1px solid variaveis.$corDeFundo;
+    }
+
+    @include text
+}

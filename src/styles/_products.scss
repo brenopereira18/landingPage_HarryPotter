@@ -1,0 +1,41 @@
+@use 'variaveis';
+
+.products {
+    padding: 5.6vw;
+    background-color: variaveis.$corPrimary;
+
+    h2 {
+        text-align: center;
+        color: variaveis.$corDeFundo;
+        padding-bottom: 60px;
+    }
+
+    &__content {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 60px;
+
+        &__product {            
+            text-align: center;
+
+            img {
+                max-height: 250px;
+                border-radius: 8px;
+                width: 90%;
+                height: 100%;
+            }
+
+            h4 {
+                color: variaveis.$corDeFundo;
+                padding: 8px 0;
+            }
+
+            span {
+                display: block;
+                font-size: 18px;
+                color: variaveis.$corDeFundo;                
+                padding-bottom: 6px;
+            }
+        }
+    }
+}
