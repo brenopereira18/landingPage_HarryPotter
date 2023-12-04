@@ -1,0 +1,37 @@
+@use 'variaveis';
+
+.characters {
+    padding: 5.6vw;
+    background-color: variaveis.$corDeFundo;
+    color: variaveis.$corTitleProminence;
+
+    h2 {
+        text-align: center;
+        padding-bottom: 60px;
+    }
+
+    &__content {        
+        text-align: center;
+        display: flex; 
+        justify-content: space-between;      
+        
+        &__character {            
+            max-width: 350px;
+            width: 100%;         
+                        
+            
+            img {
+                border-radius: 3px;
+                
+            }
+
+            h4 {
+                padding: 8px;
+            }
+
+            p {
+                color: variaveis.$corPrimary;                
+            }
+        }
+    }
+}
