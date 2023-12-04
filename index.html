@@ -12,7 +12,7 @@
 <body>
     <header class="header">
         <h1>
-            <img class="header__logo" src="./src/images/Logo.png" alt="Harry Potter">
+            <img class="header__logo" src="./dist/images/Logo.png" alt="Harry Potter">
         </h1>
         <ul class="header__list">
             <li class="header__list__item">
@@ -50,9 +50,75 @@
                     A Saga Harry Potter é a série mais bem sucedida da história do cinema mundial. Os oito filmes faturaram mais de 6,5 bilhões de dólares nos cinemas de todo o mundo, e ao todo somaram 12 indicações ao Oscar. Todos os longas foram baseados nos sete livros escritos pela escritora inglesa J.K.Rowling, inevitáveis best sellers mundiais. Os diretores Chris Columbus, Alfonso Cuarón, Mike Newell e David Yates foram os responsáveis por essas adaptações, transformando em ícones também os três protagonistas, Daniel Radcliffe (Harry Potter), Emma Watson (Hermione Granger) e Rupert Grint (Ron Weasley).    
                 </p>
             </div>            
-            <img src="./src/images/home-image.jpg" alt="Harry Potter, Herminone Granger e Ron Weasley">                            
+            <img src="./dist/images/home-image.jpg" alt="Harry Potter, Herminone Granger e Ron Weasley">                            
         </div>
-    </section>    
+    </section>
+    <section class="attractions">
+        <h2 class="title--big">Filmes e livros</h2>
+        <div class="attractions__content">
+            <nav class="attractions__links">
+                <button data-tab-button="filmes" class=" attractions__links__link attractions__links__link--is-active title--small">
+                    Filmes
+                </button>
+                <button data-tab-button="livros" class="attractions__links__link title--small">
+                    Livros
+                </button>
+            </nav>
+            <div class="attractions__images">
+                <ul data-tab-id="filmes" class="attractions__list attractions__list--is-active">
+                    <li class="attractions__list__item">
+                        <img src="./dist/images/filmes/Pedra_Filosofal.png" alt="Harry Potter e a Pedra Filosofal">
+                    </li>
+                    <li class="attractions__list__item">
+                        <img src="./dist/images/filmes/Camara_Secreta.png" alt="Harry Potter e a Câmara Secreta">
+                    </li>
+                    <li class="attractions__list__item">
+                        <img src="./dist/images/filmes/Prisioneiro_de_Azkaban.png" alt="Harry Potter e o Prisioneiro de Azkaban">
+                    </li>
+                    <li class="attractions__list__item">
+                        <img src="./dist/images/filmes/Calice_de_Fogo.png" alt="Harry Potter e o Cálice de fogo">
+                    </li>
+                    <li class="attractions__list__item">
+                        <img src="./dist/images/filmes/Ordem_da_Fenix.png" alt="Harry Potter e a Ordem da fênix">
+                    </li>
+                    <li class="attractions__list__item">
+                        <img src="./dist/images/filmes/Enigma_do_Principe.png" alt="Harry Potter e o Enigma do Príncipe">
+                    </li>
+                    <li class="attractions__list__item">
+                        <img src="./dist/images/filmes/Reliquias_da_Morte_Parte_1.png" alt="Harry Potter e as Relíquias da Morte: parte 1">
+                    </li>
+                    <li class="attractions__list__item">
+                        <img src="./dist/images/filmes/Reliquias_da_Morte_Parte_2.png" alt="Harry Potter e as Relíquias da Morte: parte 2">
+                    </li>
+                </ul>
+                <ul data-tab-id="livros" class="attractions__list">
+                    <li class="attractions__list__item">
+                        <img src="./dist/images/livros/pedra-filosofal.jpg.webp" alt="Harry Potter e a Pedra Filosofal">
+                    </li>
+                    <li class="attractions__list__item">
+                        <img src="./dist/images/livros/camara-secreta.jpg.webp" alt="Harry Potter e a Câmara Secreta">
+                    </li>
+                    <li class="attractions__list__item">
+                        <img src="./dist/images/livros/prisioneiro-de-askaban.jpg.webp" alt="Harry Potter e o Prisioneiro de Azkaban">
+                    </li>
+                    <li class="attractions__list__item">
+                        <img src="./dist/images/livros/calice-de-fogo.jpg.webp" alt="Harry Potter e o Cálice de fogo">
+                    </li>
+                    <li class="attractions__list__item">
+                        <img src="./dist/images/livros/ordem-da-fenix.jpg.webp" alt="Harry Potter e a Ordem da fênix">
+                    </li>
+                    <li class="attractions__list__item">
+                        <img src="./dist/images/livros/enigama-do-principe.jpg.webp" alt="Harry Potter e o Enigma do Príncipe">
+                    </li>
+                    <li class="attractions__list__item">
+                        <img src="./dist/images/livros/reliquias-da-morte.jpg.webp" alt="Harry Potter e as Relíquias da Morte">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <script src="./src/scripts/main.js"></script>   
 </body>
 </html>
+                                           
                     

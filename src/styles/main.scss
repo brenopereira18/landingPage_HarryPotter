@@ -1,6 +1,7 @@
 @use 'variaveis';
 @use 'header';
 @use 'home';
+@use 'attractions';
 
 * {
     margin: 0;
@@ -9,14 +10,12 @@
 }
 
 @mixin text($fontSize: 16px) {
-    font-size: $fontSize;
-    color: variaveis.$corPrimary;
+    font-size: $fontSize;    
     font-family: variaveis.$FontText;
 }
 
 @mixin title($fontSize: 40px) {
-    font-size: $fontSize;
-    color: variaveis.$corPrimary;
+    font-size: $fontSize;    
     font-family: variaveis.$FontTitle;
 }
 

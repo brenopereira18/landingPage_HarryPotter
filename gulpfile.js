@@ -10,7 +10,13 @@ function compilaSass() {
         .pipe(gulp.dest('./dist/styles'))
 }
 
-exports.default = gulp.parallel(compilaSass)
+function comprimeImagem() {
+    return gulp.src('./src/images/**/*')
+        .pipe(imagemin())
+        .pipe(gulp.dest('./dist/images'))
+}
+
+exports.default = gulp.parallel(compilaSass, comprimeImagem)
 exports.watch = function() {
     gulp.watch('./src/styles/*.scss', gulp.parallel(compilaSass))
     

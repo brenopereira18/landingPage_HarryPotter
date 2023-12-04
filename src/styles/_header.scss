@@ -26,12 +26,12 @@
 
             .item__link {
                 text-decoration: none;
-                color: variaveis.$corSecundary;
+                color: variaveis.$corDeFundo;
                 font-weight: bold;
                 text-transform: uppercase;
 
                 &:hover {
-                    border-bottom: 3px solid variaveis.$corSecundary;
+                    border-bottom: 3px solid variaveis.$corDeFundo;
                 }
             }
         }
