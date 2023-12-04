@@ -4,7 +4,7 @@
     background-color: variaveis.$corDeFundo;
     
     @media (max-width: 768px) {
-      padding: 24vw 5.6vw 4vw;     
+      padding: 24vw 5.6vw 4vw;    
       
     }
     
@@ -17,11 +17,20 @@
 
       @media (max-width: 768px) {
         flex-direction: column;
-    }
+      }
+
+      @media (max-width: 1023px) {
+        flex-direction: column;      
+      }
 
       &__title {
         max-width: 450px;
         width: 100%;
+
+        @media (max-width: 1023px) {
+          max-width: 500px;
+          padding-bottom: 18px;    
+        }
 
         h2 {
           color: variaveis.$corPrimary;
